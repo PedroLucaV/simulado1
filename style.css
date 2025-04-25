@@ -165,7 +165,6 @@ main{
 }
 
 .servicos{
-    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -179,7 +178,6 @@ main{
 
 .cards-services{
     display: grid;
-    width: 100%;
     gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -316,4 +314,76 @@ footer{
 .utils{
     display: flex;
     gap: 5rem;
+}
+
+@media screen and (max-width: 1480px) {
+    .galeria{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cards{
+        margin: 0 4rem;
+    }
+    .cards-services{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    .sobre{
+        flex-direction: column;
+    }
+
+    .fotot{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cards{
+        margin: 0 2rem;
+    }
+    .cards-services{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cards{
+        margin: 0 0rem;
+    }
+    .cards-services{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .galeria{
+        grid-template-columns: 1fr;
+    }
+
+    .cards{
+        margin: 0 0rem;
+    }
+    .cards-services{
+        grid-template-columns: 1fr;
+    }
+
+    .contato{
+        flex-direction: column;
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 77) {
+    
 }
