@@ -84,3 +84,52 @@ main{
     height: 667px;
     background-color: red;
 }
+
+.sobre{
+    width: 100%;
+    display: flex;
+    color: white;
+}
+
+.sobreEm>p{
+    width: 50%;
+}
+
+.foto{
+    width: 50%;
+}
+.fotot{
+    width: 730px;
+    height: 520px;
+}
+
+.galeria{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cards{
+    width: 480px;
+    height: 450px;
+    position: relative;
+}
+
+.cardImg{
+    background-color: green;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+
+.cards:hover>.cardContents{
+    display: flex;
+}
+
+.cardContents{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    background-color: red;
+    height: 100%;
+}
