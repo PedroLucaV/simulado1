@@ -31,6 +31,7 @@ header{
     margin: 0 auto;
     background-color: brown;
     opacity: 50%;
+    z-index: +1;
     height: 70px;
 }
 
@@ -120,6 +121,7 @@ main{
     width: 100%;
     position: absolute;
     height: 100%;
+    
 }
 
 .cards:hover>.cardContents{
@@ -127,9 +129,114 @@ main{
 }
 
 .cardContents{
-    display: flex;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    display: none;
     position: absolute;
     width: 100%;
+    transition: 1s;
     background-color: red;
     height: 100%;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardContents>button{
+    width: 45%;
+    border: none;
+    background-color: white;
+    height: 50px;
+}
+
+.servicos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.servicos>h1{
+    margin: 4rem;
+    font-size: 42pt;
+    color: white;
+}
+
+.cards-services{
+    display: grid;
+    width: 100%;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contato{
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    width: 750px;
+    height: 572px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form>form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formContent{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.lbl{
+    color: white;
+}
+
+.inpt{
+    resize: none;
+    width: 100%;
+}
+
+textarea{
+    height: 100px;
+}
+
+.loc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    color: white;
+    font-size: 16pt;
+    width: 750px;
+}
+
+.locCont{
+    width: 80%;
+    height: 500px;
+    background-color: red;
+}
+
+.sbmt{
+    width: 100%;
+    height: 30px;
+    border: none;
+    background-color: white;
+}
+
+.sbmt:hover{
+    color: blue;
 }
